@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap" rel="stylesheet"> 
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Colors</h1>
+            <div class="inputs">
+                <div class="input-container">
+                    <p class="input__title">Red value</p>
+                    <label id="red-label" for="sample-input" class="input__label">58</label>
+                    <input id="red-input" class="input" type="range" min="0" max="255" step="1">
+                </div>
+                <div class="input-container">
+                    <p class="input__title">Green value</p>
+                    <label id="green-label" for="sample-input" class="input__label">123</label>
+                    <input id="green-input" class="input" type="range" min="0" max="255" step="1">
+                </div>
+                <div class="input-container">
+                    <p class="input__title">Blue value</p>
+                    <label id="blue-label" for="sample-input" class="input__label">214</label>
+                    <input id="blue-input" class="input" type="range" min="0" max="255" step="1">
+                </div>
+                <div class="input-container">
+                    <p class="input__title">Alpha value</p>
+                    <label id="alpha-label" for="sample-input" class="input__label">1</label>
+                    <input id="alpha-input" class="input" type="range" min="0" max="1" step="0.1">
+                </div>
+                <code>rgba(58,123,214,1);</code>
+            </div>
+    </div>
+</body>
+</html>
