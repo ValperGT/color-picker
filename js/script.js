@@ -15,7 +15,7 @@ const color = {
     "red":0,
     "green":0,
     "blue":0,
-    "alpha":1.0
+    "alpha":1
 }
 
 if(savedColor){
@@ -33,27 +33,31 @@ if(savedColor){
 $redInput.addEventListener("input", ()=>{
     $redLabel.innerText = $redInput.value;
     color.red = $redInput.value;
-    body.style.backgroundColor = `rgba(${color.red}, ${color.green}, ${color.blue}, ${color.alpha})`;
+    let newColor = `rgba(${color.red}, ${color.green}, ${color.blue}, ${color.alpha})`;
+    body.style.backgroundColor = newColor;
     localStorage.setItem("color", JSON.stringify(color));
 })
 
 $greenInput.addEventListener("input", ()=>{
     $greenLabel.innerText = $greenInput.value;
     color.green = $greenInput.value;
-    body.style.backgroundColor = `rgba(${color.red}, ${color.green}, ${color.blue}, ${color.alpha})`;
+    let newColor = `rgba(${color.red}, ${color.green}, ${color.blue}, ${color.alpha})`;
+    body.style.backgroundColor = newColor;
     localStorage.setItem("color", JSON.stringify(color));
 })
 
 $blueInput.addEventListener("input", ()=>{
     $blueLabel.innerText = $blueInput.value;
     color.blue = $blueInput.value;
-    body.style.backgroundColor = `rgba(${color.red}, ${color.green}, ${color.blue}, ${color.alpha})`;
+    let newColor = `rgba(${color.red}, ${color.green}, ${color.blue}, ${color.alpha})`;
+    body.style.backgroundColor = newColor;
     localStorage.setItem("color", JSON.stringify(color));
 })
 
 $alphaInput.addEventListener("input", ()=>{
     $alphaLabel.innerText = $alphaInput.value;
     color.alpha = $alphaInput.value;
-    body.style.backgroundColor = `rgba(${color.red}, ${color.green}, ${color.blue}, ${color.alpha})`;
+    let newColor = `rgba(${color.red}, ${color.green}, ${color.blue}, ${color.alpha})`;
+    body.style.backgroundColor = newColor;
     localStorage.setItem("color", JSON.stringify(color));
 })
