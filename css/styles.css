@@ -134,6 +134,9 @@ body{
 }
 
 @media only screen and (max-width: 680px){
+    body{
+        padding: 1rem 0;
+    }
     .input__copy-button{
         width: 100%;
     }
